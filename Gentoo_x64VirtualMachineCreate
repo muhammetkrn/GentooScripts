@@ -11,7 +11,7 @@ VBoxManage storagectl "Gentoodeneme" --name "SATA Controller" --add sata --contr
 VBoxManage storageattach "Gentoodeneme" --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium 'Gentoodeneme'.vdi
 
 VBoxManage storagectl "Gentoodeneme" --name "IDE Controller" --add ide
-VBoxManage storageattach "Gentoodeneme" --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium /home/muhammet/İndirilenler/install-amd64-minimal-20190728T214502Z.iso
+VBoxManage storageattach "Gentoodeneme" --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium /home/muhammet/İndirilenler/install-amd64-minimal-20190728T214502Z.iso #directory where .iso file is located
 
 VBoxManage startvm gentooclone
 VBoxManage controlvm gentooclone --vrde on
